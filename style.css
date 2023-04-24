@@ -1,1 +1,25 @@
-css
+html{
+background: #FFDCB6;
+}
+div {
+background: #ECC9EE;
+text-align:center;
+}
+h1 {
+background: #C9A7EB;
+text-align:center;
+}
+h2 {
+color: #9384D1;
+font-family: 'Lobster', cursive;
+text-align:center;
+}
+h3 {
+color: #FFDCB6;
+background-color: #C9A7EB;
+text-align:center;
+}
+p {
+text-align:center;
+}
+margin-bottom: 100px;
