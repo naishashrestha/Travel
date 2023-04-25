@@ -6,8 +6,7 @@ background: #ECC9EE;
 text-align:center;
 }
 h1 {
-background: #C9A7EB;
-text-align:center;
+background-color: #C9A7EB;
 }
 h2 {
 color: #9384D1;
@@ -22,4 +21,54 @@ text-align:center;
 p {
 text-align:center;
 }
-margin-bottom: 100px;
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	}
+	
+	li, a, button {
+	font-family: 'Lobster', cursive;
+	font-weight: 500;
+	font-size: 16px;
+	color: #9384D1;
+	text-decoration: none;
+	}
+	
+header {
+	disply: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+
+.nav_links {
+	list-style: none;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav_links li a {
+	transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+	color: #9384D1;
+}
+button {
+	padding: 9px 25px;
+	background-color: #ECC9EE;
+	border: none;
+	border-radius: 50px;
+	cursor:
+	tar;
+}
+
+
+
+
+
