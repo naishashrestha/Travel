@@ -15,18 +15,53 @@
 	</head>
 	<body>
 		<header>
-			<a class="cta" href="index.html"><button>My Travel Guide</button>
-				<nav>
-					<ul class="nav_links">
-						<li><a href="./arizona.html">Arizona</a></li>
-						<li><a href="./utah.html">Utah</a></li>
-						<li><a href="./nevada.html">Nevada</a></li>
-						<li><a href="./idaho.html">Idaho</a></li>
-						<li><a href="./wyoming.html">Wyoming</a></li>
-						<li><a href="./newmexico.html">New Mexico</a></li>
-					</ul>
-				</nav>
+				<a class="cta" href="index.html"><button>My Travel Guide</button></a>
+						<ul class="nav_links">
+							<li><a href="./arizona.html">Arizona</a></li>
+							<ul class="dropdown">
+								<li><a href="./arizona1/antelope-c.html">Antelope Canyon</a></li>
+								<li><a href="./arizona1/grand-c.html">Grand Canyon</a></li>
+								<li><a href="./arizona1/horse-s-b.html">Horse Shoe Bend</a></li>
+								<li><a href="./arizona1/lake-p.html">Lake Powell</a></li>
+								<li><a href="./arizona1/slot-c.html">Slot Canyon</a></li>
+								</ul>
+							<li><a href="./utah.html">Utah</a></li>
+							<li><a href="./nevada.html">Nevada</a></li>
+							<li><a href="./idaho.html">Idaho</a></li>
+							<li><a href="./wyoming.html">Wyoming</a></li>
+							<li><a href="./newmexico.html">New Mexico</a></li>
+						</ul>
 		</header>
+		<script>
+			var i = 0; // Start point
+			var images = [];
+			var time = 3000;
+			
+			// Image list
+			images[0] = './image/hsb.jpg';
+			images[1] = './image/bryce.jpg';
+			images[2] = './image/lv.jpeg';
+			images[3] = './image/sf.jpeg';
+			
+			
+			// Change Image
+			function changeImg(){
+				document.slide.src = images[i];
+				
+				if(i < images.length - 1){
+					i++;
+			} else {
+				i = 0;
+			}
+			
+			setTimeout("changeImg()", time);
+		}
+		
+		window.onload = changeImg;
+		
+		
+		</script>
+		<img name="slide" width="400" height="200">
 		<div id="content">
 			<div class="states" id="arizona">
 				<h2> 💜  Arizona  💜 </h2>
