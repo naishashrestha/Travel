@@ -1,10 +1,12 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 html{
 background: #FFDCB6;
 }
-div {
-background: #ECC9EE;
-text-align:center;
-}
+
 h1 {
 background-color: #C9A7EB;
 }
@@ -18,41 +20,7 @@ color: #FFDCB6;
 background-color: #C9A7EB;
 text-align:center;
 }
-p {
-text-align:center;
-}
 
-*{
-font-family: 'Lobster', cursive;
-margin: 0;
-padding: 0;
-}
-ul {
-list-style: none;
-background: lightblue;
-}
-ul li {
-display: inline-block;
-position: relative;
-}
-ul li a {
-display: block;
-padding: 20px 25px;
-color: #FFF;
-text-decoration: none;
-text-align: center;
-font-size: 20px;
-}
-ul li ul.dropdown li {
-display: block;
-}
-ul li ul.dropdown {
-width: 100%;
-background: #blue;
-position: absolute;
-z-index: 999;
-display: none;
-}
 ul li a:
  button {
 font-weight: 500;
@@ -60,6 +28,7 @@ font-size: 16px;
 color: #9384D1;
 text-decoration: none;
 }
+
 button {
 padding: 9px 25px;
 background-color: #ECC9EE;
@@ -68,34 +37,65 @@ border-radius: 50px;
 cursor:
 tar;
 }
-header {
-disply: flex;
-justify-content: space-between;
-align-items: center;
-padding: 30px 10%;
-}
 
-.nav_links {
+.menubar {
+	background: #A4D0A4;
+	text-align: center;
+}
+.menubar ul {
+	display: inline-flex;
 	list-style: none;
+	color: #FFF8D6
 }
-
-.nav_links li {
-display: inline-block;
-padding: 0px 20px;
+.menubar ul li {
+	width: 120px;
+	margin: 15px;
+	padding: 15px;
 }
-
-.nav_links li a {
-transition: all 0.3 ease 0s;
+.menubar ul li a {
+	text-decoration: none;
+	color: #FFF8D6;
 }
-
-.nav_links li a:hover {
-color: #9384D1;
+.active, .menubar ul li:hover {
+	background: #617A55;
+	border-radius: 3px;
 }
-
-script {
-postion: relative;
+.menubar .fa {
+	margin-right: 8px;
 }
-
-
-
-
+.arizonadrp {
+	display: none;	
+}
+.menubar ul li:hover .arizonadrp {
+	display: block;
+	position: absolute;
+	background: #408E91;
+	margin-top: 15px;
+	margin-left: -15px;
+}
+.menubar ul li:hover .arizonadrp ul {
+	display: block;
+	margin: 10px;
+	
+}
+.menubar ul li:hover .arizonadrp ul li {
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #FFF8D6;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+.menubar ul li:hover .arizonadrp ul li:last-child {
+	border-bottom:none;
+}
+.menubar ul li:hover .arizonadrp ul li a:hover {
+	color: #E49393;
+}
+#contact {
+	float: right;
+}
+.logo{
+	position: relative;
+	top: 50px;
+}
